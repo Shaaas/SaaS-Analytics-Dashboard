@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora | SaaS Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-icon">V</div>
+                <h2>Velora</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="fas fa-th-large"></i> Overview</a>
+                <a href="#"><i class="fas fa-chart-line"></i> Analytics</a>
+                <a href="#"><i class="fas fa-wallet"></i> Payments</a>
+                <a href="#"><i class="fas fa-users"></i> Customers</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/40" alt="Profile">
+                    <div>
+                        <p class="u-name">Alex Rivera</p>
+                        <p class="u-plan">Pro Plan</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-nav">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search data...">
+                </div>
+                <div class="top-actions">
+                    <button class="btn-icon"><i class="far fa-bell"></i><span class="dot"></span></button>
+                    <button class="btn-primary">+ New Report</button>
+                </div>
+            </header>
+
+            <section class="overview">
+                <div class="welcome">
+                    <h1>Revenue Dashboard</h1>
+                    <p>Metrics for Jan 1st - Jan 13th, 2026</p>
+                </div>
+
+                
+                <div class="stats-grid">
+                    <div class="stat-card glass">
+                        <div class="stat-header">
+                            <span>Total Revenue</span>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h2 id="revenue-val">$128,430</h2>
+                        <span class="trend up"><i class="fas fa-arrow-up"></i> 12.5%</span>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-header">
+                            <span>Active Users</span>
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h2>12,842</h2>
+                        <span class="trend up"><i class="fas fa-arrow-up"></i> 8.2%</span>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-header">
+                            <span>Churn Rate</span>
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h2>2.4%</h2>
+                        <span class="trend down"><i class="fas fa-arrow-down"></i> 0.5%</span>
+                    </div>
+                </div>
+
+                <div class="data-section">
+                    <div class="chart-container glass">
+                        <h3>Growth Projection</h3>
+                        <div class="bar-chart" id="barChart">
+                            </div>
+                    </div>
+                    <div class="recent-activity glass">
+                        <h3>Recent Transactions</h3>
+                        <div class="transaction-list">
+                            <div class="t-item">
+                                <div class="t-icon"><i class="fab fa-stripe"></i></div>
+                                <div class="t-info">
+                                    <p>Stripe Payout</p>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <p class="t-amount">+$1,200.00</p>
+                            </div>
+                            <div class="t-item">
+                                <div class="t-icon"><i class="fab fa-apple"></i></div>
+                                <div class="t-info">
+                                    <p>Apple Service</p>
+                                    <span>5 hours ago</span>
+                                </div>
+                                <p class="t-amount">-$15.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
